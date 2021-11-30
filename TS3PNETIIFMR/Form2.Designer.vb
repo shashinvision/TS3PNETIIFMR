@@ -25,6 +25,10 @@ Partial Class Form2
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ingresarDietaTab = New System.Windows.Forms.TabControl()
         Me.DesayunoTab = New System.Windows.Forms.TabPage()
+        Me.addComestibleBtn = New System.Windows.Forms.Button()
+        Me.addComestibleInput = New System.Windows.Forms.TextBox()
+        Me.addBebestibleBtn = New System.Windows.Forms.Button()
+        Me.addBebestibleInput = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.comestibleListBox = New System.Windows.Forms.ListBox()
@@ -35,10 +39,6 @@ Partial Class Form2
         Me.addDiaInput = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.diasInput = New System.Windows.Forms.ComboBox()
-        Me.addBebestibleInput = New System.Windows.Forms.TextBox()
-        Me.addBebestibleBtn = New System.Windows.Forms.Button()
-        Me.addComestibleInput = New System.Windows.Forms.TextBox()
-        Me.addComestibleBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.ingresarDietaTab.SuspendLayout()
         Me.DesayunoTab.SuspendLayout()
@@ -87,6 +87,40 @@ Partial Class Form2
         Me.DesayunoTab.Text = "Desayuno"
         Me.DesayunoTab.UseVisualStyleBackColor = True
         '
+        'addComestibleBtn
+        '
+        Me.addComestibleBtn.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.addComestibleBtn.Location = New System.Drawing.Point(376, 339)
+        Me.addComestibleBtn.Name = "addComestibleBtn"
+        Me.addComestibleBtn.Size = New System.Drawing.Size(261, 23)
+        Me.addComestibleBtn.TabIndex = 8
+        Me.addComestibleBtn.Text = "Añadir comestible"
+        Me.addComestibleBtn.UseVisualStyleBackColor = False
+        '
+        'addComestibleInput
+        '
+        Me.addComestibleInput.Location = New System.Drawing.Point(376, 310)
+        Me.addComestibleInput.Name = "addComestibleInput"
+        Me.addComestibleInput.Size = New System.Drawing.Size(261, 23)
+        Me.addComestibleInput.TabIndex = 7
+        '
+        'addBebestibleBtn
+        '
+        Me.addBebestibleBtn.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.addBebestibleBtn.Location = New System.Drawing.Point(33, 339)
+        Me.addBebestibleBtn.Name = "addBebestibleBtn"
+        Me.addBebestibleBtn.Size = New System.Drawing.Size(261, 23)
+        Me.addBebestibleBtn.TabIndex = 5
+        Me.addBebestibleBtn.Text = "Añadir bebestible"
+        Me.addBebestibleBtn.UseVisualStyleBackColor = False
+        '
+        'addBebestibleInput
+        '
+        Me.addBebestibleInput.Location = New System.Drawing.Point(33, 310)
+        Me.addBebestibleInput.Name = "addBebestibleInput"
+        Me.addBebestibleInput.Size = New System.Drawing.Size(261, 23)
+        Me.addBebestibleInput.TabIndex = 5
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -130,7 +164,7 @@ Partial Class Form2
         Me.almuerzoTab.Location = New System.Drawing.Point(4, 24)
         Me.almuerzoTab.Name = "almuerzoTab"
         Me.almuerzoTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.almuerzoTab.Size = New System.Drawing.Size(683, 368)
+        Me.almuerzoTab.Size = New System.Drawing.Size(683, 404)
         Me.almuerzoTab.TabIndex = 1
         Me.almuerzoTab.Text = "Almuerzo"
         Me.almuerzoTab.UseVisualStyleBackColor = True
@@ -140,7 +174,7 @@ Partial Class Form2
         Me.cenaTab.Location = New System.Drawing.Point(4, 24)
         Me.cenaTab.Name = "cenaTab"
         Me.cenaTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.cenaTab.Size = New System.Drawing.Size(683, 368)
+        Me.cenaTab.Size = New System.Drawing.Size(683, 404)
         Me.cenaTab.TabIndex = 2
         Me.cenaTab.Text = "Cena"
         Me.cenaTab.UseVisualStyleBackColor = True
@@ -180,40 +214,6 @@ Partial Class Form2
         Me.diasInput.Size = New System.Drawing.Size(144, 23)
         Me.diasInput.TabIndex = 0
         Me.diasInput.Text = "-- Seleccione un día --"
-        '
-        'addBebestibleInput
-        '
-        Me.addBebestibleInput.Location = New System.Drawing.Point(33, 310)
-        Me.addBebestibleInput.Name = "addBebestibleInput"
-        Me.addBebestibleInput.Size = New System.Drawing.Size(261, 23)
-        Me.addBebestibleInput.TabIndex = 5
-        '
-        'addBebestibleBtn
-        '
-        Me.addBebestibleBtn.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.addBebestibleBtn.Location = New System.Drawing.Point(33, 339)
-        Me.addBebestibleBtn.Name = "addBebestibleBtn"
-        Me.addBebestibleBtn.Size = New System.Drawing.Size(261, 23)
-        Me.addBebestibleBtn.TabIndex = 5
-        Me.addBebestibleBtn.Text = "Añadir bebestible"
-        Me.addBebestibleBtn.UseVisualStyleBackColor = False
-        '
-        'addComestibleInput
-        '
-        Me.addComestibleInput.Location = New System.Drawing.Point(376, 310)
-        Me.addComestibleInput.Name = "addComestibleInput"
-        Me.addComestibleInput.Size = New System.Drawing.Size(261, 23)
-        Me.addComestibleInput.TabIndex = 7
-        '
-        'addComestibleBtn
-        '
-        Me.addComestibleBtn.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.addComestibleBtn.Location = New System.Drawing.Point(376, 339)
-        Me.addComestibleBtn.Name = "addComestibleBtn"
-        Me.addComestibleBtn.Size = New System.Drawing.Size(261, 23)
-        Me.addComestibleBtn.TabIndex = 8
-        Me.addComestibleBtn.Text = "Añadir comestible"
-        Me.addComestibleBtn.UseVisualStyleBackColor = False
         '
         'Form2
         '
