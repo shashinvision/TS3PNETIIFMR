@@ -1,8 +1,13 @@
 ﻿Public Class Form2
     Private Sub addDiaBtn_Click(sender As Object, e As EventArgs) Handles addDiaBtn.Click
 
-        diasInput.Items.Add(addDiaInput.Text)
-        addDiaInput.Text = ""
+        Select Case addDiaInput.Text
+            Case "Jueves", "Viernes", "Sábado", "Domingo"
+                diasInput.Items.Add(addDiaInput.Text)
+                addDiaInput.Text = ""
+            Case Else
+                MessageBox.Show("El valor de los dias de la semana deben ser:  Jueves, Viernes, Sábado, Domingo")
+        End Select
     End Sub
 
     Private Sub addBebestibleBtn_Click(sender As Object, e As EventArgs) Handles addBebestibleBtn.Click
@@ -93,5 +98,36 @@
             acompaniamientoListBox.Items.Add(addAcompaniamientoInput.Text)
             addAcompaniamientoInput.Text = ""
         End If
+    End Sub
+
+    Private Sub guardarBtn_Click(sender As Object, e As EventArgs) Handles guardarBtn.Click
+
+
+        strResumen.Add(New Dictionary(Of String, String)() From {
+             {
+             diasInput.Text,
+              vbCrLf + "- Día " + diasInput.Text + vbCrLf
+              }
+        })
+
+        strResumen.Add(New Dictionary(Of String, String)() From {
+            {
+            diasInput.Text, " Desayuno:  " + bebestibleListBox.SelectedItem.ToString + " con " + comestibleListBox.SelectedItem.ToString + vbCrLf
+             }
+       })
+
+        strResumen.Add(New Dictionary(Of String, String)() From {
+            {
+            diasInput.Text, " Almuerzo:  " + proteinaListBox.SelectedItem.ToString + " con " + acompaniamientoListBox.SelectedItem.ToString + vbCrLf
+             }
+       })
+
+        strResumen.Add(New Dictionary(Of String, String)() From {
+           {
+           diasInput.Text, " Cena:  " + verduraListBox.SelectedItem.ToString + " con " + frutaListBox.SelectedItem.ToString + vbCrLf +
+            "******************" +
+            vbCrLf
+            }
+      })
     End Sub
 End Class
