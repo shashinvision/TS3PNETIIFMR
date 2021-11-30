@@ -144,10 +144,12 @@
             diasInput.Items.Remove(diasInput.SelectedItem)
             bebestibleListBox.Items.Remove(bebestibleListBox.SelectedItem)
             comestibleListBox.Items.Remove(comestibleListBox.SelectedItem)
+
+            proteinaListBox.Items.Remove(proteinaListBox.SelectedItem)
+            acompaniamientoListBox.Items.Remove(acompaniamientoListBox.SelectedItem)
+
             verduraListBox.Items.Remove(verduraListBox.SelectedItem)
             frutaListBox.Items.Remove(frutaListBox.SelectedItem)
-
-
 
         End If
 

@@ -10,4 +10,10 @@
         formInformeDieta.MdiParent = Me
         formInformeDieta.Show()
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim formIngresarDieta As New Form2
+        formIngresarDieta.MdiParent = Me
+        formIngresarDieta.Show()
+    End Sub
 End Class
