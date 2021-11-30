@@ -1,4 +1,8 @@
-﻿Public Class Form1
+﻿Imports FormControl2 = CS2PNETII.Form1
+
+Public Class Form1
+    ' ensamblado 
+
     Private Sub MenúToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MenúToolStripMenuItem.Click
         Dim formIngresarDieta As New Form2
         formIngresarDieta.MdiParent = Me
@@ -15,5 +19,11 @@
         Dim formIngresarDieta As New Form2
         formIngresarDieta.MdiParent = Me
         formIngresarDieta.Show()
+    End Sub
+
+    Private Sub EnsambladoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EnsambladoToolStripMenuItem.Click
+        Dim formControlSemana2 As New FormControl2
+        formControlSemana2.MdiParent = Me
+        formControlSemana2.Show()
     End Sub
 End Class
