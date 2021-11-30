@@ -49,18 +49,20 @@ Partial Class Form2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.acompaniamientoListBox = New System.Windows.Forms.ListBox()
         Me.proteinaListBox = New System.Windows.Forms.ListBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.addFrutaBtn = New System.Windows.Forms.Button()
+        Me.addFrutaInput = New System.Windows.Forms.TextBox()
+        Me.addVerduraBtn = New System.Windows.Forms.Button()
+        Me.addVerduraInput = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ListBox3 = New System.Windows.Forms.ListBox()
-        Me.ListBox4 = New System.Windows.Forms.ListBox()
+        Me.frutaListBox = New System.Windows.Forms.ListBox()
+        Me.verduraListBox = New System.Windows.Forms.ListBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.ingresarDietaTab.SuspendLayout()
         Me.DesayunoTab.SuspendLayout()
@@ -229,14 +231,16 @@ Partial Class Form2
         '
         'cenaTab
         '
-        Me.cenaTab.Controls.Add(Me.Button3)
-        Me.cenaTab.Controls.Add(Me.TextBox3)
-        Me.cenaTab.Controls.Add(Me.Button4)
-        Me.cenaTab.Controls.Add(Me.TextBox4)
+        Me.cenaTab.Controls.Add(Me.Label13)
+        Me.cenaTab.Controls.Add(Me.Label12)
+        Me.cenaTab.Controls.Add(Me.addFrutaBtn)
+        Me.cenaTab.Controls.Add(Me.addFrutaInput)
+        Me.cenaTab.Controls.Add(Me.addVerduraBtn)
+        Me.cenaTab.Controls.Add(Me.addVerduraInput)
         Me.cenaTab.Controls.Add(Me.Label6)
         Me.cenaTab.Controls.Add(Me.Label7)
-        Me.cenaTab.Controls.Add(Me.ListBox3)
-        Me.cenaTab.Controls.Add(Me.ListBox4)
+        Me.cenaTab.Controls.Add(Me.frutaListBox)
+        Me.cenaTab.Controls.Add(Me.verduraListBox)
         Me.cenaTab.Location = New System.Drawing.Point(4, 24)
         Me.cenaTab.Name = "cenaTab"
         Me.cenaTab.Padding = New System.Windows.Forms.Padding(3)
@@ -353,77 +357,77 @@ Partial Class Form2
         Me.proteinaListBox.Size = New System.Drawing.Size(261, 214)
         Me.proteinaListBox.TabIndex = 9
         '
-        'Button3
+        'addFrutaBtn
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button3.Location = New System.Drawing.Point(382, 338)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(261, 23)
-        Me.Button3.TabIndex = 16
-        Me.Button3.Text = "Añadir comestible"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.addFrutaBtn.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.addFrutaBtn.Location = New System.Drawing.Point(382, 338)
+        Me.addFrutaBtn.Name = "addFrutaBtn"
+        Me.addFrutaBtn.Size = New System.Drawing.Size(261, 23)
+        Me.addFrutaBtn.TabIndex = 16
+        Me.addFrutaBtn.Text = "Añadir fruta"
+        Me.addFrutaBtn.UseVisualStyleBackColor = False
         '
-        'TextBox3
+        'addFrutaInput
         '
-        Me.TextBox3.Location = New System.Drawing.Point(382, 309)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(261, 23)
-        Me.TextBox3.TabIndex = 15
+        Me.addFrutaInput.Location = New System.Drawing.Point(382, 309)
+        Me.addFrutaInput.Name = "addFrutaInput"
+        Me.addFrutaInput.Size = New System.Drawing.Size(261, 23)
+        Me.addFrutaInput.TabIndex = 15
         '
-        'Button4
+        'addVerduraBtn
         '
-        Me.Button4.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.Button4.Location = New System.Drawing.Point(39, 338)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(261, 23)
-        Me.Button4.TabIndex = 11
-        Me.Button4.Text = "Añadir bebestible"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.addVerduraBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.addVerduraBtn.Location = New System.Drawing.Point(39, 338)
+        Me.addVerduraBtn.Name = "addVerduraBtn"
+        Me.addVerduraBtn.Size = New System.Drawing.Size(261, 23)
+        Me.addVerduraBtn.TabIndex = 11
+        Me.addVerduraBtn.Text = "Añadir verdura"
+        Me.addVerduraBtn.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'addVerduraInput
         '
-        Me.TextBox4.Location = New System.Drawing.Point(39, 309)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(261, 23)
-        Me.TextBox4.TabIndex = 12
+        Me.addVerduraInput.Location = New System.Drawing.Point(39, 309)
+        Me.addVerduraInput.Name = "addVerduraInput"
+        Me.addVerduraInput.Size = New System.Drawing.Size(261, 23)
+        Me.addVerduraInput.TabIndex = 12
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(378, 280)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(265, 15)
+        Me.Label6.Size = New System.Drawing.Size(232, 15)
         Me.Label6.TabIndex = 14
-        Me.Label6.Text = "¿No encuentras tu comestible?, añadelo a la lista."
+        Me.Label6.Text = "¿No encuentras tu fruta?, añadelo a la lista."
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(39, 280)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(261, 15)
+        Me.Label7.Size = New System.Drawing.Size(247, 15)
         Me.Label7.TabIndex = 13
-        Me.Label7.Text = "¿No encuentras tu bebestible?, añadelo a la lista."
+        Me.Label7.Text = "¿No encuentras tu verdura?, añadelo a la lista."
         '
-        'ListBox3
+        'frutaListBox
         '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.ItemHeight = 15
-        Me.ListBox3.Items.AddRange(New Object() {"Tostada integral", "Tostada con mantequilla", "Tostada con Jamón", "Tostada con Palta", "Marraqueta", "Marraqueta con Tomate", "Marraqueta con Salame"})
-        Me.ListBox3.Location = New System.Drawing.Point(378, 44)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(265, 214)
-        Me.ListBox3.TabIndex = 10
+        Me.frutaListBox.FormattingEnabled = True
+        Me.frutaListBox.ItemHeight = 15
+        Me.frutaListBox.Items.AddRange(New Object() {"Naranja", "Manzana", "Plátano", "Uva", "Kiwi", "Piña", "Frutilla", "Durazno"})
+        Me.frutaListBox.Location = New System.Drawing.Point(378, 44)
+        Me.frutaListBox.Name = "frutaListBox"
+        Me.frutaListBox.Size = New System.Drawing.Size(265, 214)
+        Me.frutaListBox.TabIndex = 10
         '
-        'ListBox4
+        'verduraListBox
         '
-        Me.ListBox4.FormattingEnabled = True
-        Me.ListBox4.ItemHeight = 15
-        Me.ListBox4.Items.AddRange(New Object() {"Té Solo", "Té con leche", "Café solo", "Café con leche", "Café express", "Café cortado", "Capuccino"})
-        Me.ListBox4.Location = New System.Drawing.Point(39, 44)
-        Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(261, 214)
-        Me.ListBox4.TabIndex = 9
+        Me.verduraListBox.FormattingEnabled = True
+        Me.verduraListBox.ItemHeight = 15
+        Me.verduraListBox.Items.AddRange(New Object() {"Zanahoria", "Tomate", "Palta", "Lechuga", "Espinaca", "Apio"})
+        Me.verduraListBox.Location = New System.Drawing.Point(39, 44)
+        Me.verduraListBox.Name = "verduraListBox"
+        Me.verduraListBox.Size = New System.Drawing.Size(261, 214)
+        Me.verduraListBox.TabIndex = 9
         '
         'Label8
         '
@@ -464,6 +468,26 @@ Partial Class Form2
         Me.Label11.Size = New System.Drawing.Size(105, 15)
         Me.Label11.TabIndex = 18
         Me.Label11.Text = "Acompañamiento"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.Location = New System.Drawing.Point(378, 26)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(36, 15)
+        Me.Label12.TabIndex = 18
+        Me.Label12.Text = "Fruta"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(39, 26)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(51, 15)
+        Me.Label13.TabIndex = 19
+        Me.Label13.Text = "Verdura"
         '
         'Form2
         '
@@ -514,16 +538,18 @@ Partial Class Form2
     Friend WithEvents Label5 As Label
     Friend WithEvents acompaniamientoListBox As ListBox
     Friend WithEvents proteinaListBox As ListBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents addFrutaBtn As Button
+    Friend WithEvents addFrutaInput As TextBox
+    Friend WithEvents addVerduraBtn As Button
+    Friend WithEvents addVerduraInput As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents ListBox3 As ListBox
-    Friend WithEvents ListBox4 As ListBox
+    Friend WithEvents frutaListBox As ListBox
+    Friend WithEvents verduraListBox As ListBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
 End Class
