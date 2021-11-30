@@ -102,32 +102,54 @@
 
     Private Sub guardarBtn_Click(sender As Object, e As EventArgs) Handles guardarBtn.Click
 
+        If diasInput.SelectedIndex = -1 Then
+            MessageBox.Show("Debe seleccionar un día para la dieta.")
+        ElseIf bebestibleListBox.SelectedIndex = -1 Or comestibleListBox.SelectedIndex = -1 Or proteinaListBox.SelectedIndex = -1 Or verduraListBox.SelectedIndex = -1 Or frutaListBox.SelectedIndex = -1 Then
+            MessageBox.Show("Debe seleccionar una combinación completa de Desayuno, Almuerzo y Cena")
+        Else
 
-        strResumen.Add(New Dictionary(Of String, String)() From {
-             {
-             diasInput.Text,
-              vbCrLf + "- Día " + diasInput.Text + vbCrLf
-              }
-        })
+            ' se usa un diccionario para crear un arreglo asociativo por día, dentro de cada diccionario se usa un arreglo o lista con la data por día 
+            ' de esta forma se crea un arreglo multidimensional 
+            strResumen.Add(New Dictionary(Of String, String)() From {
+                 {
+                 diasInput.Text,
+                  vbCrLf + "- Día " + diasInput.Text + vbCrLf
+                  }
+            })
 
-        strResumen.Add(New Dictionary(Of String, String)() From {
-            {
-            diasInput.Text, " Desayuno:  " + bebestibleListBox.SelectedItem.ToString + " con " + comestibleListBox.SelectedItem.ToString + vbCrLf
-             }
-       })
+            strResumen.Add(New Dictionary(Of String, String)() From {
+                {
+                diasInput.Text, " Desayuno:  " + bebestibleListBox.SelectedItem.ToString + " con " + comestibleListBox.SelectedItem.ToString + vbCrLf
+                 }
+           })
 
-        strResumen.Add(New Dictionary(Of String, String)() From {
-            {
-            diasInput.Text, " Almuerzo:  " + proteinaListBox.SelectedItem.ToString + " con " + acompaniamientoListBox.SelectedItem.ToString + vbCrLf
-             }
-       })
+            strResumen.Add(New Dictionary(Of String, String)() From {
+                {
+                diasInput.Text, " Almuerzo:  " + proteinaListBox.SelectedItem.ToString + " con " + acompaniamientoListBox.SelectedItem.ToString + vbCrLf
+                 }
+           })
 
-        strResumen.Add(New Dictionary(Of String, String)() From {
-           {
-           diasInput.Text, " Cena:  " + verduraListBox.SelectedItem.ToString + " con " + frutaListBox.SelectedItem.ToString + vbCrLf +
-            "******************" +
-            vbCrLf
-            }
-      })
+            strResumen.Add(New Dictionary(Of String, String)() From {
+               {
+               diasInput.Text, " Cena:  " + verduraListBox.SelectedItem.ToString + " con " + frutaListBox.SelectedItem.ToString + vbCrLf +
+                "******************" +
+                vbCrLf
+                }
+          })
+
+            MessageBox.Show("Felicidades su menú se añadio al informe de la Dieta por día")
+
+            ' Eliminación de registros ya guardados en informe de dieta
+
+            diasInput.Items.Remove(diasInput.SelectedItem)
+            bebestibleListBox.Items.Remove(bebestibleListBox.SelectedItem)
+            comestibleListBox.Items.Remove(bebestibleListBox.SelectedItem)
+            verduraListBox.Items.Remove(bebestibleListBox.SelectedItem)
+            frutaListBox.Items.Remove(bebestibleListBox.SelectedItem)
+
+
+
+        End If
+
     End Sub
 End Class
