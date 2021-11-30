@@ -100,6 +100,46 @@
         End If
     End Sub
 
+    Private Sub addVerduraBtn_Click(sender As Object, e As EventArgs) Handles addVerduraBtn.Click
+        Dim existe = False
+
+        ' Recorro el listado para saber si existe un valor que coincida
+        For i = 0 To verduraListBox.Items.Count - 1
+
+            If addVerduraInput.Text = verduraListBox.Items(i).ToString Then
+                MessageBox.Show("No puede añadir un Verdura que ya se encuentra en la lista")
+                existe = True
+                addVerduraInput.Text = ""
+            End If
+        Next
+
+        ' Si no coincide se añade un nuevo elemento
+        If existe = False Then
+            verduraListBox.Items.Add(addVerduraInput.Text)
+            addVerduraInput.Text = ""
+        End If
+    End Sub
+
+    Private Sub addFrutaBtn_Click(sender As Object, e As EventArgs) Handles addFrutaBtn.Click
+        Dim existe = False
+
+        ' Recorro el listado para saber si existe un valor que coincida
+        For i = 0 To frutaListBox.Items.Count - 1
+
+            If addFrutaInput.Text = frutaListBox.Items(i).ToString Then
+                MessageBox.Show("No puede añadir un Fruta que ya se encuentra en la lista")
+                existe = True
+                addFrutaInput.Text = ""
+            End If
+        Next
+
+        ' Si no coincide se añade un nuevo elemento
+        If existe = False Then
+            frutaListBox.Items.Add(addFrutaInput.Text)
+            addFrutaInput.Text = ""
+        End If
+    End Sub
+
     Private Sub guardarBtn_Click(sender As Object, e As EventArgs) Handles guardarBtn.Click
 
         If diasInput.SelectedIndex = -1 Then
@@ -234,4 +274,6 @@
         MessageBox.Show("Se restablece toda la información al modo inicial")
 
     End Sub
+
+
 End Class

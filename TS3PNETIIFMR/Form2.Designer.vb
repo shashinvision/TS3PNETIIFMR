@@ -276,7 +276,7 @@ Partial Class Form2
         Me.addAcompaniamientoBtn.Name = "addAcompaniamientoBtn"
         Me.addAcompaniamientoBtn.Size = New System.Drawing.Size(261, 23)
         Me.addAcompaniamientoBtn.TabIndex = 16
-        Me.addAcompaniamientoBtn.Text = "Añadir comestible"
+        Me.addAcompaniamientoBtn.Text = "Añadir acompañamiento"
         Me.addAcompaniamientoBtn.UseVisualStyleBackColor = False
         '
         'addAcompaniamientoInput
