@@ -27,6 +27,8 @@ Partial Class Form2
         Me.guardarBtn = New System.Windows.Forms.Button()
         Me.ingresarDietaTab = New System.Windows.Forms.TabControl()
         Me.DesayunoTab = New System.Windows.Forms.TabPage()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.addComestibleBtn = New System.Windows.Forms.Button()
         Me.addComestibleInput = New System.Windows.Forms.TextBox()
         Me.addBebestibleBtn = New System.Windows.Forms.Button()
@@ -36,11 +38,8 @@ Partial Class Form2
         Me.comestibleListBox = New System.Windows.Forms.ListBox()
         Me.bebestibleListBox = New System.Windows.Forms.ListBox()
         Me.almuerzoTab = New System.Windows.Forms.TabPage()
-        Me.cenaTab = New System.Windows.Forms.TabPage()
-        Me.addDiaBtn = New System.Windows.Forms.Button()
-        Me.addDiaInput = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.diasInput = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.addAcompaniamientoBtn = New System.Windows.Forms.Button()
         Me.addAcompaniamientoInput = New System.Windows.Forms.TextBox()
         Me.addProteinaBtn = New System.Windows.Forms.Button()
@@ -49,6 +48,9 @@ Partial Class Form2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.acompaniamientoListBox = New System.Windows.Forms.ListBox()
         Me.proteinaListBox = New System.Windows.Forms.ListBox()
+        Me.cenaTab = New System.Windows.Forms.TabPage()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.addFrutaBtn = New System.Windows.Forms.Button()
         Me.addFrutaInput = New System.Windows.Forms.TextBox()
         Me.addVerduraBtn = New System.Windows.Forms.Button()
@@ -57,12 +59,10 @@ Partial Class Form2
         Me.Label7 = New System.Windows.Forms.Label()
         Me.frutaListBox = New System.Windows.Forms.ListBox()
         Me.verduraListBox = New System.Windows.Forms.ListBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
+        Me.addDiaBtn = New System.Windows.Forms.Button()
+        Me.addDiaInput = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.diasInput = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.ingresarDietaTab.SuspendLayout()
         Me.DesayunoTab.SuspendLayout()
@@ -136,6 +136,26 @@ Partial Class Form2
         Me.DesayunoTab.TabIndex = 0
         Me.DesayunoTab.Text = "Desayuno"
         Me.DesayunoTab.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label9.Location = New System.Drawing.Point(372, 15)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(69, 15)
+        Me.Label9.TabIndex = 10
+        Me.Label9.Text = "Comestible"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Location = New System.Drawing.Point(33, 15)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(66, 15)
+        Me.Label8.TabIndex = 9
+        Me.Label8.Text = "Bebestible"
         '
         'addComestibleBtn
         '
@@ -229,61 +249,25 @@ Partial Class Form2
         Me.almuerzoTab.Text = "Almuerzo"
         Me.almuerzoTab.UseVisualStyleBackColor = True
         '
-        'cenaTab
+        'Label11
         '
-        Me.cenaTab.Controls.Add(Me.Label13)
-        Me.cenaTab.Controls.Add(Me.Label12)
-        Me.cenaTab.Controls.Add(Me.addFrutaBtn)
-        Me.cenaTab.Controls.Add(Me.addFrutaInput)
-        Me.cenaTab.Controls.Add(Me.addVerduraBtn)
-        Me.cenaTab.Controls.Add(Me.addVerduraInput)
-        Me.cenaTab.Controls.Add(Me.Label6)
-        Me.cenaTab.Controls.Add(Me.Label7)
-        Me.cenaTab.Controls.Add(Me.frutaListBox)
-        Me.cenaTab.Controls.Add(Me.verduraListBox)
-        Me.cenaTab.Location = New System.Drawing.Point(4, 24)
-        Me.cenaTab.Name = "cenaTab"
-        Me.cenaTab.Padding = New System.Windows.Forms.Padding(3)
-        Me.cenaTab.Size = New System.Drawing.Size(683, 404)
-        Me.cenaTab.TabIndex = 2
-        Me.cenaTab.Text = "Cena"
-        Me.cenaTab.UseVisualStyleBackColor = True
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label11.Location = New System.Drawing.Point(378, 17)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(105, 15)
+        Me.Label11.TabIndex = 18
+        Me.Label11.Text = "Acompañamiento"
         '
-        'addDiaBtn
+        'Label10
         '
-        Me.addDiaBtn.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.addDiaBtn.Location = New System.Drawing.Point(192, 104)
-        Me.addDiaBtn.Name = "addDiaBtn"
-        Me.addDiaBtn.Size = New System.Drawing.Size(75, 23)
-        Me.addDiaBtn.TabIndex = 3
-        Me.addDiaBtn.Text = "Añadir día"
-        Me.addDiaBtn.UseVisualStyleBackColor = False
-        '
-        'addDiaInput
-        '
-        Me.addDiaInput.Location = New System.Drawing.Point(30, 104)
-        Me.addDiaInput.Name = "addDiaInput"
-        Me.addDiaInput.Size = New System.Drawing.Size(144, 23)
-        Me.addDiaInput.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 75)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(240, 15)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "¿No encuentras tu día?, añada un nuevo día."
-        '
-        'diasInput
-        '
-        Me.diasInput.FormattingEnabled = True
-        Me.diasInput.Items.AddRange(New Object() {"Lunes", "Martes", "Miércoles"})
-        Me.diasInput.Location = New System.Drawing.Point(30, 34)
-        Me.diasInput.Name = "diasInput"
-        Me.diasInput.Size = New System.Drawing.Size(144, 23)
-        Me.diasInput.TabIndex = 0
-        Me.diasInput.Text = "-- Seleccione un día --"
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label10.Location = New System.Drawing.Point(39, 17)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(54, 15)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "Proteína"
         '
         'addAcompaniamientoBtn
         '
@@ -357,6 +341,46 @@ Partial Class Form2
         Me.proteinaListBox.Size = New System.Drawing.Size(261, 214)
         Me.proteinaListBox.TabIndex = 9
         '
+        'cenaTab
+        '
+        Me.cenaTab.Controls.Add(Me.Label13)
+        Me.cenaTab.Controls.Add(Me.Label12)
+        Me.cenaTab.Controls.Add(Me.addFrutaBtn)
+        Me.cenaTab.Controls.Add(Me.addFrutaInput)
+        Me.cenaTab.Controls.Add(Me.addVerduraBtn)
+        Me.cenaTab.Controls.Add(Me.addVerduraInput)
+        Me.cenaTab.Controls.Add(Me.Label6)
+        Me.cenaTab.Controls.Add(Me.Label7)
+        Me.cenaTab.Controls.Add(Me.frutaListBox)
+        Me.cenaTab.Controls.Add(Me.verduraListBox)
+        Me.cenaTab.Location = New System.Drawing.Point(4, 24)
+        Me.cenaTab.Name = "cenaTab"
+        Me.cenaTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.cenaTab.Size = New System.Drawing.Size(683, 404)
+        Me.cenaTab.TabIndex = 2
+        Me.cenaTab.Text = "Cena"
+        Me.cenaTab.UseVisualStyleBackColor = True
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(39, 14)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(51, 15)
+        Me.Label13.TabIndex = 19
+        Me.Label13.Text = "Verdura"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.Location = New System.Drawing.Point(378, 14)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(36, 15)
+        Me.Label12.TabIndex = 18
+        Me.Label12.Text = "Fruta"
+        '
         'addFrutaBtn
         '
         Me.addFrutaBtn.BackColor = System.Drawing.SystemColors.ButtonFace
@@ -429,65 +453,41 @@ Partial Class Form2
         Me.verduraListBox.Size = New System.Drawing.Size(261, 214)
         Me.verduraListBox.TabIndex = 9
         '
-        'Label8
+        'addDiaBtn
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(33, 24)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(66, 15)
-        Me.Label8.TabIndex = 9
-        Me.Label8.Text = "Bebestible"
+        Me.addDiaBtn.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.addDiaBtn.Location = New System.Drawing.Point(192, 104)
+        Me.addDiaBtn.Name = "addDiaBtn"
+        Me.addDiaBtn.Size = New System.Drawing.Size(75, 23)
+        Me.addDiaBtn.TabIndex = 3
+        Me.addDiaBtn.Text = "Añadir día"
+        Me.addDiaBtn.UseVisualStyleBackColor = False
         '
-        'Label9
+        'addDiaInput
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.Location = New System.Drawing.Point(372, 24)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(69, 15)
-        Me.Label9.TabIndex = 10
-        Me.Label9.Text = "Comestible"
+        Me.addDiaInput.Location = New System.Drawing.Point(30, 104)
+        Me.addDiaInput.Name = "addDiaInput"
+        Me.addDiaInput.Size = New System.Drawing.Size(144, 23)
+        Me.addDiaInput.TabIndex = 2
         '
-        'Label10
+        'Label1
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.Location = New System.Drawing.Point(39, 26)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(54, 15)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "Proteína"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(30, 75)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(240, 15)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "¿No encuentras tu día?, añada un nuevo día."
         '
-        'Label11
+        'diasInput
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.Location = New System.Drawing.Point(378, 26)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(105, 15)
-        Me.Label11.TabIndex = 18
-        Me.Label11.Text = "Acompañamiento"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.Location = New System.Drawing.Point(378, 26)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(36, 15)
-        Me.Label12.TabIndex = 18
-        Me.Label12.Text = "Fruta"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label13.Location = New System.Drawing.Point(39, 26)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(51, 15)
-        Me.Label13.TabIndex = 19
-        Me.Label13.Text = "Verdura"
+        Me.diasInput.FormattingEnabled = True
+        Me.diasInput.Items.AddRange(New Object() {"Lunes", "Martes", "Miércoles"})
+        Me.diasInput.Location = New System.Drawing.Point(30, 34)
+        Me.diasInput.Name = "diasInput"
+        Me.diasInput.Size = New System.Drawing.Size(144, 23)
+        Me.diasInput.TabIndex = 0
+        Me.diasInput.Text = "-- Seleccione un día --"
         '
         'Form2
         '
