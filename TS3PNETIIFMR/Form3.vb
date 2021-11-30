@@ -1,6 +1,6 @@
 ﻿Public Class Form3
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' posicion  strResumen(0) = dias de un arreglo
+        ' Uso del arreglo asociativo multidimensional (Diccionario con lista por día)
 
         For i As Integer = 0 To strResumen.Count - 1
             Dim value As Dictionary(Of String, String) = strResumen(i)

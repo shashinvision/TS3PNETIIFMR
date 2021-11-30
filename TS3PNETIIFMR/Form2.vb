@@ -143,13 +143,93 @@
 
             diasInput.Items.Remove(diasInput.SelectedItem)
             bebestibleListBox.Items.Remove(bebestibleListBox.SelectedItem)
-            comestibleListBox.Items.Remove(bebestibleListBox.SelectedItem)
-            verduraListBox.Items.Remove(bebestibleListBox.SelectedItem)
-            frutaListBox.Items.Remove(bebestibleListBox.SelectedItem)
+            comestibleListBox.Items.Remove(comestibleListBox.SelectedItem)
+            verduraListBox.Items.Remove(verduraListBox.SelectedItem)
+            frutaListBox.Items.Remove(frutaListBox.SelectedItem)
 
 
 
         End If
+
+    End Sub
+
+    Private Sub restaurarBtn_Click(sender As Object, e As EventArgs) Handles restaurarBtn.Click
+
+        ' clear de data
+
+        ' Dias 
+        diasInput.Items.Clear()
+        diasInput.Items.Add(diasBackup(0))
+        diasInput.Items.Add(diasBackup(1))
+        diasInput.Items.Add(diasBackup(2))
+
+        ' Desayuno - Bebestibles
+        bebestibleListBox.Items.Clear()
+        bebestibleListBox.Items.Add(bebestibleBackup(0))
+        bebestibleListBox.Items.Add(bebestibleBackup(1))
+        bebestibleListBox.Items.Add(bebestibleBackup(2))
+        bebestibleListBox.Items.Add(bebestibleBackup(3))
+        bebestibleListBox.Items.Add(bebestibleBackup(4))
+        bebestibleListBox.Items.Add(bebestibleBackup(5))
+        bebestibleListBox.Items.Add(bebestibleBackup(6))
+
+        ' Desayuno - Comestibles
+        comestibleListBox.Items.Clear()
+        comestibleListBox.Items.Add(comestibleBackup(0))
+        comestibleListBox.Items.Add(comestibleBackup(1))
+        comestibleListBox.Items.Add(comestibleBackup(2))
+        comestibleListBox.Items.Add(comestibleBackup(3))
+        comestibleListBox.Items.Add(comestibleBackup(4))
+        comestibleListBox.Items.Add(comestibleBackup(5))
+        comestibleListBox.Items.Add(comestibleBackup(6))
+
+        ' Almuerzo - Proteína
+        proteinaListBox.Items.Clear()
+        proteinaListBox.Items.Add(proteinaBackup(0))
+        proteinaListBox.Items.Add(proteinaBackup(1))
+        proteinaListBox.Items.Add(proteinaBackup(2))
+        proteinaListBox.Items.Add(proteinaBackup(3))
+        proteinaListBox.Items.Add(proteinaBackup(4))
+        proteinaListBox.Items.Add(proteinaBackup(5))
+        proteinaListBox.Items.Add(proteinaBackup(6))
+        proteinaListBox.Items.Add(proteinaBackup(7))
+
+        ' Almuerzo - Acompañiamientos
+        acompaniamientoListBox.Items.Clear()
+        acompaniamientoListBox.Items.Add(acompaniamientoBackup(0))
+        acompaniamientoListBox.Items.Add(acompaniamientoBackup(1))
+        acompaniamientoListBox.Items.Add(acompaniamientoBackup(2))
+        acompaniamientoListBox.Items.Add(acompaniamientoBackup(3))
+        acompaniamientoListBox.Items.Add(acompaniamientoBackup(4))
+        acompaniamientoListBox.Items.Add(acompaniamientoBackup(5))
+        acompaniamientoListBox.Items.Add(acompaniamientoBackup(6))
+
+        ' Cena - Verduras
+        verduraListBox.Items.Clear()
+        verduraListBox.Items.Add(verdurasBackup(0))
+        verduraListBox.Items.Add(verdurasBackup(1))
+        verduraListBox.Items.Add(verdurasBackup(2))
+        verduraListBox.Items.Add(verdurasBackup(3))
+        verduraListBox.Items.Add(verdurasBackup(4))
+        verduraListBox.Items.Add(verdurasBackup(5))
+
+
+        ' Cena - Frutas
+        frutaListBox.Items.Clear()
+        frutaListBox.Items.Add(frutasBackup(0))
+        frutaListBox.Items.Add(frutasBackup(1))
+        frutaListBox.Items.Add(frutasBackup(2))
+        frutaListBox.Items.Add(frutasBackup(3))
+        frutaListBox.Items.Add(frutasBackup(4))
+        frutaListBox.Items.Add(frutasBackup(5))
+        frutaListBox.Items.Add(frutasBackup(6))
+        frutaListBox.Items.Add(frutasBackup(7))
+
+        ' Limpieza de informe de dieta 
+
+        strResumen.Clear()
+
+        MessageBox.Show("Se restablece toda la información al modo inicial")
 
     End Sub
 End Class
